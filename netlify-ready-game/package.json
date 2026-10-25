@@ -1,0 +1,26 @@
+{
+  "name": "battle-quiz-arena-netlify",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Battle Quiz Arena - Netlify Functions and Blobs multiplayer build",
+  "scripts": {
+    "build": "vite build && netlify functions:build",
+    "test:game": "node tests/game-flow.test.mjs"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^10.5.0",
+    "@netlify/functions": "^3.1.10",
+    "@vitejs/plugin-react": "^4.3.4",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@netlify/cli": "^23.5.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5"
+  }
+}
